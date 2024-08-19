@@ -7,6 +7,33 @@ This Bash script automates the process of optimizing Wi-Fi channels for better n
 
 - **Root Access**: The script must be run as root.
 - **Tools**: `speedtest-cli` and `bc` must be installed. The script will attempt to install these if they are not already present.
+  
+## Installation
+
+To get started, you can clone the repository containing the script and then run it:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Shuvam-Banerji-Seal/Wi-Fi-channel-optimizer.git
+   ```
+
+2. **Navigate to the Repository Directory**:
+   ```bash
+   cd Wi-Fi-channel-optimizer
+   ```
+
+3. **Make the Script Executable**:
+   ```bash
+   chmod +x wifi_optimization.sh
+   ```
+
+## Usage
+
+Run the script with root privileges to start optimizing your Wi-Fi connection:
+
+```bash
+sudo ./wifi_optimization.sh
+```
 
 ## Script Overview
 
@@ -137,17 +164,5 @@ nmcli device wifi connect "$SSID" ifname "$WIFI_INTERFACE"
 
 - **Purpose**: Verifies the stability and performance of the connection on the chosen channel with final tests.
 
-## Usage
 
-To use the script:
-
-1. Save it to a file, e.g., `wifi_optimization.sh`.
-2. Make the script executable:
-   ```bash
-   chmod +x wifi_optimization.sh
-   ```
-3. Run the script with root privileges:
-   ```bash
-   sudo ./wifi_optimization.sh
-   ```
 
